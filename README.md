@@ -1,176 +1,301 @@
-# 3D Portfolio Website
+# 🚀 Vaibhav Patel – 3D Portfolio
 
-This repository contains the source code for a personal 3D portfolio built with React, TypeScript, Three.js, React Three Fiber, and GSAP. It includes animated page sections, a character scene, custom cursor interactions, and smooth transitions designed for a modern portfolio experience.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![React](https://img.shields.io/badge/React-18-61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![Three.js](https://img.shields.io/badge/Three.js-Latest-black)
+![Vite](https://img.shields.io/badge/Vite-Latest-purple)
 
-Live site: [https://akashrmalhotra.netlify.app/](https://akashrmalhotra.netlify.app/)
+A modern **3D developer portfolio** built with **React, TypeScript, Vite, Three.js, React Three Fiber, Drei, and GSAP**. The portfolio showcases my professional experience, technical skills, certifications, GitHub projects, and interactive 3D animations with a premium user experience.
 
-![Portfolio Preview](public/images/preview1.png)
+## 🌐 Live Portfolio
 
-## Table of Contents
+**Website:**
+https://vaibhav2694p.github.io/vaibhav-portfolio-v2/
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Available Scripts](#available-scripts)
-- [GSAP License Note](#gsap-license-note)
-- [Customization Guide](#customization-guide)
-- [Troubleshooting](#troubleshooting)
-- [Deployment](#deployment)
-- [License](#license)
+## 👨‍💻 About Me
 
-## Features
+Hi, I'm **Vaibhav Patel**.
 
-- Responsive one-page portfolio layout with reusable section components.
-- 3D character scene rendering powered by React Three Fiber and Three.js.
-- GSAP-powered animations and transitions for interactive storytelling.
-- Custom cursor, hover interactions, and scroll-driven visual effects.
-- Organized component architecture with dedicated utilities and style modules.
+Senior IT Executive with **10+ years of experience** in:
 
-## Tech Stack
+* Microsoft 365 Administration
+* Azure Active Directory
+* Microsoft Intune
+* Azure Virtual Desktop (AVD)
+* Exchange Online
+* Windows Server
+* Active Directory
+* IT Infrastructure
+* Network Security
+* Firewall Administration
+* Cloud Management
+* Endpoint Security
+* IT Asset Management
+* Google Workspace
+* Server Administration
+* Automation
 
-### Core
+Currently working at **Safebooks Global Pvt. Ltd.**, managing enterprise IT infrastructure, cloud services, endpoint security, Microsoft 365, Azure, networking, and automation solutions.
 
-- React 18
-- TypeScript
-- Vite
+---
 
-### Animation and 3D
+# ✨ Features
 
-- GSAP + `@gsap/react`
-- Three.js
-- `@react-three/fiber`
-- `@react-three/drei`
-- `@react-three/postprocessing`
-- `@react-three/cannon`
-- `@react-three/rapier`
+* Premium 3D animated portfolio
+* Interactive React Three Fiber scene
+* GSAP-powered animations
+* Smooth page transitions
+* Custom cursor animations
+* Responsive design
+* Dark modern UI
+* Hero avatar animation
+* Animated experience timeline
+* Skills showcase
+* Dynamic GitHub projects
+* Resume download
+* Contact form
+* Mobile optimized
+* SEO optimized
+* Fast loading
+* GitHub Pages deployment
 
-### Supporting Libraries
+---
 
-- `react-icons`
-- `react-fast-marquee`
-- `@vercel/analytics`
+# 🛠 Tech Stack
 
-## Project Structure
+## Frontend
 
-```text
+* React 18
+* TypeScript
+* Vite
+
+## 3D & Animation
+
+* Three.js
+* React Three Fiber
+* React Drei
+* GSAP
+* @gsap/react
+* React Fast Marquee
+
+## UI
+
+* CSS3
+* Responsive Design
+* Modern Dark Theme
+
+## Deployment
+
+* GitHub Pages
+
+---
+
+# 📂 Project Structure
+
+```
 .
-├── public/                    # Static assets
+├── public/
+│   ├── assets/
+│   ├── models/
+│   └── textures/
+│
 ├── src/
-│   ├── assets/                # Local media/assets
+│   ├── assets/
 │   ├── components/
-│   │   ├── Character/         # 3D scene + character logic/utilities
-│   │   ├── styles/            # Section/component CSS files
-│   │   ├── About.tsx
-│   │   ├── Career.tsx
-│   │   ├── Contact.tsx
-│   │   ├── Landing.tsx
-│   │   ├── MainContainer.tsx  # Main page composition
-│   │   ├── Navbar.tsx
-│   │   ├── TechStack.tsx
-│   │   ├── WhatIDo.tsx
-│   │   └── Work.tsx
-│   ├── context/               # Global providers (loading state, etc.)
-│   ├── data/                  # Static data/content definitions
+│   │   ├── Character/
+│   │   ├── Hero/
+│   │   ├── About/
+│   │   ├── Experience/
+│   │   ├── Skills/
+│   │   ├── Projects/
+│   │   ├── Certifications/
+│   │   ├── Contact/
+│   │   └── Navbar/
+│   │
+│   ├── data/
+│   ├── hooks/
+│   ├── styles/
+│   ├── utils/
 │   ├── App.tsx
 │   └── main.tsx
+│
 ├── package.json
 └── vite.config.ts
 ```
 
-## Getting Started
+---
 
-### Prerequisites
+# 💼 Professional Experience
 
-- Node.js 18+ (recommended)
-- npm 9+ (or compatible)
+* Senior IT Executive – Safebooks Global
+* IT Administrator
+* IT Asset Coordinator
+* IT Engineer
+* Network Engineer
 
-### Installation
+Over **10+ years** of experience managing enterprise IT infrastructure and cloud platforms.
 
-1. Clone the repository:
+---
 
-   ```bash
-   git clone <your-repository-url>
-   cd 3d-portfolio
-   ```
+# 🚀 Technical Skills
 
-2. Install dependencies:
+### Microsoft Technologies
 
-   ```bash
-   npm install
-   ```
+* Microsoft 365
+* Azure AD
+* Azure Virtual Desktop
+* Microsoft Intune
+* Exchange Online
+* Teams
+* SharePoint
+* OneDrive
 
-3. Start the local development server:
+### Infrastructure
 
-   ```bash
-   npm run dev
-   ```
+* Windows Server
+* Active Directory
+* DNS
+* DHCP
+* Hyper-V
+* VMware
 
-4. Open the URL shown in the terminal (typically `http://localhost:5173`).
+### Security
 
-## Available Scripts
+* Microsoft Defender
+* Sophos Firewall
+* Conditional Access
+* Zero Trust
+* Endpoint Security
 
-- `npm run dev`  
-  Starts Vite dev server and exposes host for local network testing.
+### Networking
 
-- `npm run build`  
-  Type-checks and builds a production-ready bundle.
+* TCP/IP
+* LAN/WAN
+* VPN
+* Firewall
+* Routing
+* Switching
 
-- `npm run preview`  
-  Serves the production build locally for verification.
+### Operating Systems
 
-- `npm run lint`  
-  Runs ESLint checks across the project.
+* Windows
+* Linux
 
-## GSAP License Note
+### Programming
 
-This project uses the standard `gsap` package, including bonus plugins now available in the core package.
+* JavaScript
+* TypeScript
+* React
+* Three.js
 
-- Install dependencies with `npm install`.
-- If migrating from older setups, remove `gsap-trial` from your project.
+---
 
-Read official installation guidance here: [GSAP Installation Docs](https://gsap.com/docs/v3/Installation/)
+# 🏆 Certifications
 
-## Customization Guide
+* Microsoft Career Essentials
+* Microsoft System Administration
+* CompTIA Network+
+* CompTIA A+
+* Windows 11 Administration
+* Computer Literacy
+* Networking Fundamentals
 
-You can adapt this portfolio to your own profile by updating the following areas:
+---
 
-- **Content sections**: Edit files in `src/components/` such as `About.tsx`, `Career.tsx`, `WhatIDo.tsx`, and `Work.tsx`.
-- **Data source**: Update static values in files under `src/data/`.
-- **Styling**: Modify component styles in `src/components/styles/` and global styles in `src/index.css` / `src/App.css`.
-- **3D scene behavior**: Adjust scene logic in `src/components/Character/` and related utilities.
-- **Animations**: Tweak GSAP utilities under `src/components/utils/`.
+# 📂 GitHub Projects
 
-## Troubleshooting
+My latest GitHub repositories are showcased automatically on the portfolio.
 
-- **Blank screen in development**  
-  Check browser console for module import errors and verify all dependencies are installed.
+GitHub:
+**https://github.com/vaibhav2694p**
 
-- **3D performance issues on low-end devices**  
-  Reduce scene complexity and post-processing effects in the character/scene utilities.
+---
 
-- **GSAP plugin errors**  
-  Ensure you have the correct plugin package and license configuration for your target environment.
+# 📄 Resume
 
-- **TypeScript build failures**  
-  Run `npm run build` and address reported type errors before deploying.
+Download my latest resume directly from the portfolio website.
 
-## Deployment
+---
 
-1. Create a production build:
+# 📞 Contact
 
-   ```bash
-   npm run build
-   ```
+**Vaibhav Patel**
 
-2. Validate locally:
+📧 Email:
+[v.d.patel26994@gmail.com](mailto:v.d.patel26994@gmail.com)
 
-   ```bash
-   npm run preview
-   ```
+💼 LinkedIn:
+https://linkedin.com/in/vaibhav-patel-b14267227
 
-3. Deploy the generated `dist/` folder to your hosting provider (for example Vercel, Netlify, or Cloudflare Pages).
+🐙 GitHub:
+https://github.com/vaibhav2694p
 
-## License
+🌐 Portfolio:
+https://vaibhav2694p.github.io/vaibhav-portfolio-v2/
 
-This project is open source and available under the [MIT License](LICENSE).
+---
+
+# 🚀 Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/vaibhav2694p/vaibhav-portfolio-v2.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run locally
+
+```bash
+npm run dev
+```
+
+Build production
+
+```bash
+npm run build
+```
+
+Preview production
+
+```bash
+npm run preview
+```
+
+Lint
+
+```bash
+npm run lint
+```
+
+---
+
+# 📈 Future Roadmap
+
+* AI-powered assistant
+* Dynamic GitHub statistics
+* Blog integration
+* Dark/Light theme
+* Multi-language support
+* Interactive 3D experiences
+* Performance optimization
+* Lighthouse score 95+
+* Accessibility improvements
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## ⭐ If you like this project, please consider giving it a Star on GitHub.
+
+Built with ❤️ by **Vaibhav Patel**
