@@ -1,13 +1,7 @@
-import { lazy, Suspense } from "react";
-
-const CharacterScene = lazy(() => import("../CharacterScene"));
+import Scene from "./Scene";
 
 const CharacterModel = () => {
-  return (
-    <Suspense fallback={null}>
-      <CharacterScene />
-    </Suspense>
-  );
+  return <Scene />;
 };
 
 export default CharacterModel;
