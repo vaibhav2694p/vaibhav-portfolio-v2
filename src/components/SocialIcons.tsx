@@ -10,6 +10,8 @@ const SocialIcons = () => {
     const social = document.getElementById("social") as HTMLElement;
     if (!social) return;
 
+    const cleanups: (() => void)[] = [];
+
     social.querySelectorAll("span").forEach((item) => {
       const elem = item as HTMLElement;
       const link = elem.querySelector("a") as HTMLElement;
@@ -18,14 +20,18 @@ const SocialIcons = () => {
       const rect = elem.getBoundingClientRect();
       let mouseX = rect.width / 2;
       let mouseY = rect.height / 2;
+      let currentX = rect.width / 2;
+      let currentY = rect.height / 2;
 
       const updatePosition = () => {
-        link.style.setProperty("--siLeft", `${mouseX}px`);
-        link.style.setProperty("--siTop", `${mouseY}px`);
+        currentX += (mouseX - currentX) * 0.1;
+        currentY += (mouseY - currentY) * 0.1;
+        link.style.setProperty("--siLeft", `${currentX}px`);
+        link.style.setProperty("--siTop", `${currentY}px`);
         requestAnimationFrame(updatePosition);
       };
 
-      document.addEventListener("mousemove", (e: MouseEvent) => {
+      const onMouseMove = (e: MouseEvent) => {
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
         if (x < 40 && x > 10 && y < 40 && y > 5) {
@@ -35,10 +41,15 @@ const SocialIcons = () => {
           mouseX = rect.width / 2;
           mouseY = rect.height / 2;
         }
-      });
+      };
+
+      document.addEventListener("mousemove", onMouseMove);
+      cleanups.push(() => document.removeEventListener("mousemove", onMouseMove));
 
       updatePosition();
     });
+
+    return () => { cleanups.forEach((fn) => fn()); };
   }, []);
 
   return (

@@ -103,6 +103,35 @@ body {
   flex-wrap: nowrap;
 }
 
+.canvas-container {
+  height: 80%;
+  height: 80vh;
+  position: absolute;
+  max-width: 1920px;
+  max-height: 1080px;
+  transform: translateX(-50%);
+  width: 100%;
+  left: 50%;
+  z-index: 0;
+  bottom: 50px;
+  pointer-events: inherit;
+}
+
+.canvas-container canvas {
+  position: relative;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@media screen and (min-width: 1025px) {
+  .canvas-container {
+    height: 100vh;
+    bottom: 0;
+    z-index: 11;
+    position: fixed;
+  }
+}
+
 .techstack {
   width: 100%;
   position: relative;

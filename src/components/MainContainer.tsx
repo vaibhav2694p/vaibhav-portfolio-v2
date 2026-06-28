@@ -12,6 +12,7 @@ import SkillsSection from "./SkillsSection";
 import CertificationsSection from "./CertificationsSection";
 import AchievementsSection from "./AchievementsSection";
 import setSplitText from "./utils/splitText";
+import { setAllTimeline } from "./utils/GsapScroll";
 
 const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
@@ -24,6 +25,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
       setIsDesktopView(window.innerWidth > 1024);
     };
     resizeHandler();
+    requestAnimationFrame(() => setAllTimeline());
     window.addEventListener("resize", resizeHandler);
     return () => {
       window.removeEventListener("resize", resizeHandler);
